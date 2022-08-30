@@ -1,0 +1,150 @@
+.product {
+    padding: 10px;
+    border: 1px solid #222;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 150px;
+    position: relative;
+
+}
+
+.remove {
+    position: absolute;
+    top: -0;
+    left: 45px;
+    background-color: orangered;
+    color: white;
+    border-color: transparent;
+}
+
+.add {
+    position: absolute;
+    border-color: transparent;
+    top: -0;
+    left: -0;
+    background-color: orangered;
+    color: white;
+}
+
+.pizzname {
+    margin-right: 5px;
+}
+
+
+.button {
+    color: white;
+    border-radius: 4px;
+    background-color: orangered;
+    width: 100%;
+    padding: 10px;
+}
+
+.imagecontainer {
+
+    width: 100%;
+    height: 130px;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h3,
+h4 {
+    display: inline-block;
+}
+
+.title {
+
+    position: absolute;
+    color: whitesmoke;
+    background: orangered;
+    padding: 0px 40px 5px 40px;
+    border-radius: 0;
+    font-size: 2rem;
+    transition: all .3s;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.rect {
+    width: 97%;
+    height: 120px;
+    border: 1px solid white;
+
+}
+
+.title:hover {
+    transform: translateY(3px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+
+}
+
+@keyframes productAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+title:active {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.price {
+    position: absolute;
+    color: orangered;
+    background: #111;
+    padding: 15px;
+    border-radius: 0;
+    font-size: 1.5rem;
+    transition: all .3s;
+    max-width: 100px;
+    min-width: 100px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+    top: 126px;
+    right: 143px;
+    height: 60px;
+}
+
+.addtocart {
+
+    position: absolute;
+    color: orangered;
+    background: #111;
+    padding: 12px;
+    border-radius: 0;
+    font-size: 1.4rem;
+    transition: all .3s;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+    top: 126px;
+    right: 245px;
+
+    height: 60px;
+}
+
+.addtocart:hover {
+    transform: translateY(3px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+
+}

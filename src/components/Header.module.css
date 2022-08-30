@@ -1,0 +1,152 @@
+.pizzacontainer {
+    background-color: #0f0f0f;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzacontainerlight {
+    background-color: #fff;
+    color: orangered;
+
+}
+
+
+.nav {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 19px 28px 5px rgba(0, 0, 0, 0.36);
+}
+
+.nav__light {
+    box-shadow: 0 1px 6px rgba(5, 27, 44, .06), 0 2px 32px rgba(5, 27, 44, .16) !important;
+
+}
+
+
+.header a {
+    padding: 0 10px;
+    color: grey;
+    text-decoration: none;
+
+}
+
+.navbar {
+    font-weight: 700;
+}
+
+.pizza {
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 2px;
+    background-image: linear-gradient(to right top, #f22d00, #f04700, #ef5b00, #ed6b05, #eb7912);
+
+    background-clip: content-box;
+    overflow: hidden;
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.lightmode {
+    margin-right: 10px;
+}
+
+.pizza:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    left: 50%;
+    top: -50%;
+    background: white;
+    transform-origin: left bottom;
+    transform: skewY(-15deg) skewX(-30deg);
+    transition: all 1s;
+}
+
+.illustration:after {
+    background: transparent;
+    border: 1px solid orange;
+}
+
+a.active {
+    color: #f04700 !important;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(-50%, -50%);
+    }
+
+    65% {
+        transform: translate(-50%, -55%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@keyframes headerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+
+@keyframes pizzaAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+.title {
+    display: inline-block;
+    margin-bottom: 50px;
+    animation: headerAnimation .5s ease-out;
+    animation-fill-mode: backwards;
+    color: orangered;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+
+
+@media (max-width: 992px) {
+    .title {
+        text-align: center;
+    }
+}

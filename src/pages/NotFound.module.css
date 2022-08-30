@@ -1,0 +1,44 @@
+.notfound {
+    font-size: 8rem;
+    color: orangered;
+    text-align: center;
+    font-weight: 700;
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.notfoundtext {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.notfound__container {
+    color: white;
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notfound__light {
+    background-color: whitesmoke;
+    color: rgb(67, 67, 67);
+}
+
+@keyframes floating {
+    from {
+        transform: translate(-0%, -0%);
+    }
+
+    65% {
+        transform: translate(-0%, -5%);
+    }
+
+    to {
+        transform: translate(-0%, -0%);
+    }
+}

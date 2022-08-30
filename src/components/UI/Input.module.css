@@ -1,0 +1,31 @@
+.form {
+    position: absolute;
+
+}
+
+.input {
+    background: #111111;
+    color: orangered;
+    font-size: 1.5rem;
+    transition: all .3s;
+    max-width: 100px;
+    min-width: 100px;
+    height: 60px;
+    border: 0;
+    padding: 15px;
+    top: 126px;
+    right: 294px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.input__light {
+    background: #F5F5F5;
+
+}
+
+.input:hover {
+    transform: translateY(3px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+
+}
